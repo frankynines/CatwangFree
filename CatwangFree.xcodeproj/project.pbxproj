@@ -171,6 +171,7 @@
 		80F176071B2E5F12007623E0 /* catwang_banner_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F176011B2E5F12007623E0 /* catwang_banner_05.png */; };
 		80F176081B2E5F12007623E0 /* catwang_banner_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F176021B2E5F12007623E0 /* catwang_banner_06.png */; };
 		80F1760A1B2F50B5007623E0 /* ui_icon_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F176091B2F50B5007623E0 /* ui_icon_lock.png */; };
+		A20C3C2A2F10C75A001F1A62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C3C292F10C75A001F1A62 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -398,6 +399,8 @@
 		80F176011B2E5F12007623E0 /* catwang_banner_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catwang_banner_05.png; sourceTree = "<group>"; };
 		80F176021B2E5F12007623E0 /* catwang_banner_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catwang_banner_06.png; sourceTree = "<group>"; };
 		80F176091B2F50B5007623E0 /* ui_icon_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_icon_lock.png; sourceTree = "<group>"; };
+		A20C3C282F10C6FA001F1A62 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.swift; sourceTree = "<group>"; };
+		A20C3C292F10C75A001F1A62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -643,6 +646,7 @@
 				3735A29315C5EB3B00AA5A56 /* External */,
 				3753C79315C3226700B8AEDE /* Resources */,
 				3753C74415C3132900B8AEDE /* Supporting Files */,
+				A20C3C292F10C75A001F1A62 /* Constants.swift */,
 			);
 			path = stickerApp;
 			sourceTree = "<group>";
@@ -687,6 +691,7 @@
 		377F64B61607895700A75CCB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A20C3C282F10C6FA001F1A62 /* test.swift */,
 				74098B791AA57474009D63B5 /* MainStoryboard.storyboard */,
 				74098B8B1AA68B80009D63B5 /* Launch Screen.xib */,
 				37E82F6B16ED6D8700CC32C6 /* Constants.h */,
@@ -1057,6 +1062,7 @@
 				0F3712C919E3867E006252EC /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				74BFF43F1AA3CBE000AE244D /* SVWebViewController.m in Sources */,
 				0F3711F419E3853D006252EC /* SVProgressHUD.m in Sources */,
+				A20C3C2A2F10C75A001F1A62 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
