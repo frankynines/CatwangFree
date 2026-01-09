@@ -158,90 +158,90 @@
 
 
 - (IBAction)shareTwitter:(id)sender {
-    
-    
-    if ([[[UIDevice currentDevice] systemVersion] compare:@"6.0" options:NSNumericSearch] != NSOrderedAscending) {
-        SLComposeViewController *twController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        SLComposeViewControllerCompletionHandler __block completionHandler =
-        ^(SLComposeViewControllerResult result) {
-            
-            [twController dismissViewControllerAnimated:YES completion:nil];
-            
-            if(result == SLComposeViewControllerResultDone) {
-                
-            }
-        };
-        
-        [twController addImage:userExportedImage];
-        [twController setInitialText:kShareDescription];
-        [twController setCompletionHandler:completionHandler];
-        [self presentViewController:twController animated:YES completion:nil];
-    } else {
-        if ([TWTweetComposeViewController canSendTweet]) {
-            TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
-            [tweetSheet addImage:userExportedImage];
-            [tweetSheet setInitialText:kShareDescription];
-            [self presentViewController:tweetSheet animated:YES completion:^(void){
-            }];
-            
-        } else {
-            UIAlertView *alertView = [[UIAlertView alloc]
-                                      initWithTitle:@"Sorry"
-                                      message:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
-                                      delegate:nil
-                                      cancelButtonTitle:@"OK"
-                                      otherButtonTitles:nil];
-            [alertView show];
-        }
-    }
-    
+//    
+//    
+//    if ([[[UIDevice currentDevice] systemVersion] compare:@"6.0" options:NSNumericSearch] != NSOrderedAscending) {
+//        SLComposeViewController *twController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+//        SLComposeViewControllerCompletionHandler __block completionHandler =
+//        ^(SLComposeViewControllerResult result) {
+//            
+//            [twController dismissViewControllerAnimated:YES completion:nil];
+//            
+//            if(result == SLComposeViewControllerResultDone) {
+//                
+//            }
+//        };
+//        
+//        [twController addImage:userExportedImage];
+//        [twController setInitialText:kShareDescription];
+//        [twController setCompletionHandler:completionHandler];
+//        [self presentViewController:twController animated:YES completion:nil];
+//    } else {
+//        if ([TWTweetComposeViewController canSendTweet]) {
+//            TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
+//            [tweetSheet addImage:userExportedImage];
+//            [tweetSheet setInitialText:kShareDescription];
+//            [self presentViewController:tweetSheet animated:YES completion:^(void){
+//            }];
+//            
+//        } else {
+//            UIAlertView *alertView = [[UIAlertView alloc]
+//                                      initWithTitle:@"Sorry"
+//                                      message:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
+//                                      delegate:nil
+//                                      cancelButtonTitle:@"OK"
+//                                      otherButtonTitles:nil];
+//            [alertView show];
+//        }
+//    }
+//    
 }
 
 - (IBAction)shareFacebook:(id)sender{
         
-    if ([[[UIDevice currentDevice] systemVersion] compare:@"6.0" options:NSNumericSearch] != NSOrderedAscending){
-        
-        SLComposeViewController *fbController = [SLComposeViewController
-                                                 composeViewControllerForServiceType:SLServiceTypeFacebook];
-        
-        SLComposeViewControllerCompletionHandler __block completionHandler=
-        ^(SLComposeViewControllerResult result){
-            
-            [fbController dismissViewControllerAnimated:YES completion:nil];
-            
-            switch(result){
-                case SLComposeViewControllerResultCancelled:
-                default:
-                {
-                    
-                    
-                }
-                    break;
-                case SLComposeViewControllerResultDone:
-                {
-              
-                    //[self.delegate shareViewDidComplete:self withMessage:@"Posted"];
-                    [SVProgressHUD showSuccessWithStatus:@"Posted"];
-                }
-                    break;
-            }};
-        
-        [fbController addImage:userExportedImage];
-        [fbController setInitialText:kShareDescription];
-        [fbController setCompletionHandler:completionHandler];
-        [self presentViewController:fbController animated:YES completion:nil];
-        
-    } else {
-        
-        UIAlertView *alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Sorry"
-                                  message:@"You can't send a post to facebook right now. Make sure you have a Facebook account setup for iOS6."
-                                  delegate:nil
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
-        [alertView show];
-        
-    }
+//    if ([[[UIDevice currentDevice] systemVersion] compare:@"6.0" options:NSNumericSearch] != NSOrderedAscending){
+//        
+//        SLComposeViewController *fbController = [SLComposeViewController
+//                                                 composeViewControllerForServiceType:SLServiceTypeFacebook];
+//        
+//        SLComposeViewControllerCompletionHandler __block completionHandler=
+//        ^(SLComposeViewControllerResult result){
+//            
+//            [fbController dismissViewControllerAnimated:YES completion:nil];
+//            
+//            switch(result){
+//                case SLComposeViewControllerResultCancelled:
+//                default:
+//                {
+//                    
+//                    
+//                }
+//                    break;
+//                case SLComposeViewControllerResultDone:
+//                {
+//              
+//                    //[self.delegate shareViewDidComplete:self withMessage:@"Posted"];
+//                    [SVProgressHUD showSuccessWithStatus:@"Posted"];
+//                }
+//                    break;
+//            }};
+//        
+//        [fbController addImage:userExportedImage];
+//        [fbController setInitialText:kShareDescription];
+//        [fbController setCompletionHandler:completionHandler];
+//        [self presentViewController:fbController animated:YES completion:nil];
+//        
+//    } else {
+//        
+//        UIAlertView *alertView = [[UIAlertView alloc]
+//                                  initWithTitle:@"Sorry"
+//                                  message:@"You can't send a post to facebook right now. Make sure you have a Facebook account setup for iOS6."
+//                                  delegate:nil
+//                                  cancelButtonTitle:@"OK"
+//                                  otherButtonTitles:nil];
+//        [alertView show];
+//        
+//    }
     
 }
 
@@ -275,14 +275,23 @@
         
     } else {
         
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"No Instagram" message:@"Looks like you dont have Instagram on this device!" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
-        [alert show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"No Instagram" 
+                                                                       message:@"Looks like you dont have Instagram on this device!" 
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Okay" 
+                                                             style:UIAlertActionStyleDefault 
+                                                           handler:nil];
+        [alert addAction:okayAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }
     
 }
 
 
-- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
+// Note: This method was used for UIAlertView delegate callbacks.
+// With UIAlertController, actions are handled inline with blocks.
+// The logic has been moved to the appropriate alert action handlers.
+- (void)alertView_DEPRECATED:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
     
     if ([alertView tag] == 0){
         if (buttonIndex == 1){
@@ -302,8 +311,14 @@
     
     if(![MFMessageComposeViewController canSendText]) {
         
-        UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Your device doesn't support MMS!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [warningAlert show];
+        UIAlertController *warningAlert = [UIAlertController alertControllerWithTitle:@"Error" 
+                                                                               message:@"Your device doesn't support MMS!" 
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" 
+                                                           style:UIAlertActionStyleDefault 
+                                                         handler:nil];
+        [warningAlert addAction:okAction];
+        [self presentViewController:warningAlert animated:YES completion:nil];
         return;
         
     }

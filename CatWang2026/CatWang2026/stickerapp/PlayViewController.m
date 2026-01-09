@@ -489,26 +489,58 @@ BOOL toggleToolBar = NO;
     return YES;
 } 
 
-typedef enum {
-    ClearAllStickersAlertViewTag,
-    StartOverAlertViewTag
-} AlertViewTag;
+
 
 - (IBAction)clearAllStickers:(id)sender{
     
-    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Clear All?" message:@"Remove all stickers from background?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
-    alertView.tag = ClearAllStickersAlertViewTag;
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Clear All?" 
+                                                                             message:@"Remove all stickers from background?" 
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"No" 
+                                                       style:UIAlertActionStyleCancel 
+                                                     handler:nil];
+    
+    UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"Yes" 
+                                                        style:UIAlertActionStyleDefault 
+                                                      handler:^(UIAlertAction * _Nonnull action) {
+        if (self->_ibo_viewStickerStage.subviews){
+            for (UIView *view in self->_ibo_viewStickerStage.subviews) {
+                [view removeFromSuperview];
+            }
+            [self->paint clearAll];
+            [self editModeStickerDone:nil];
+        }
+    }];
+    
+    [alertController addAction:noAction];
+    [alertController addAction:yesAction];
+    
     paint.userInteractionEnabled = NO;
-    [alertView show];
-
+    [self presentViewController:alertController animated:YES completion:nil];
     
 }
 #pragma CREATE NEW
 - (IBAction)actionStartNew:(id)sender{
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Start Over?" message:@"Ready to take a new photo?" delegate:self cancelButtonTitle:@"No Thanks" otherButtonTitles:@"Yes", nil];
-    alertView.tag = StartOverAlertViewTag;
-    [alertView show];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Start Over?" 
+                                                                             message:@"Ready to take a new photo?" 
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"No Thanks" 
+                                                       style:UIAlertActionStyleCancel 
+                                                     handler:nil];
+    
+    UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"Yes" 
+                                                        style:UIAlertActionStyleDefault 
+                                                      handler:^(UIAlertAction * _Nonnull action) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    
+    [alertController addAction:noAction];
+    [alertController addAction:yesAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 
 }
 
@@ -573,36 +605,7 @@ typedef enum {
 }
 
 
-- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
-    switch ([alertView tag]) {
-        case StartOverAlertViewTag:
-            if (buttonIndex == 1){
 
-                [self.navigationController popViewControllerAnimated:YES];
-            }
-            break;
-            
-        case ClearAllStickersAlertViewTag:
-            
-            if (_ibo_viewStickerStage.subviews){//Clean Up
-                if (buttonIndex == 1){
-                    for (UIView *view in _ibo_viewStickerStage.subviews) {
-                        [view removeFromSuperview];
-                        
-                    }
-                    [paint clearAll];
-                    [self editModeStickerDone:nil];
-                }
-                
-            }
-            break;
-            
-        default:
-            break;
-    }
-    
-    
-}
 //- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
 //    switch ([alertView tag]) {
 //        case 0:

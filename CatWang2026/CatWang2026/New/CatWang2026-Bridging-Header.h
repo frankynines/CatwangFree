@@ -9,6 +9,7 @@
 #define CatWang2026_Bridging_Header_h
 
 #import "Constants.h"
-#import "ViewController.h"
-
+#import "SVProgressHUD.h"
+#import "SVModalWebViewController.h"
+#import "PlayViewController.h"
 #endif /* CatWang2026_Bridging_Header_h */

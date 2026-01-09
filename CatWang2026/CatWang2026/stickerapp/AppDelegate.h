@@ -8,6 +8,8 @@
 //  ALL ARTWORK AND DESIGN OWNED BY 99centbrains, not for reproduction or redistribution
 
 #import <UIKit/UIKit.h>
+#import "CatWang2026-Swift.h"
+
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UIAlertViewDelegate>{

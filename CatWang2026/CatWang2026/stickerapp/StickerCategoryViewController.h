@@ -6,7 +6,7 @@
 //
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 @class StickerCategoryViewController;
 
@@ -16,7 +16,7 @@
 @end
 
 
-@interface StickerCategoryViewController : ViewController
+@interface StickerCategoryViewController : UIViewController
 
 @property (nonatomic, unsafe_unretained) id <StickerCategoryViewControllerDelegate> delegate;
 @end

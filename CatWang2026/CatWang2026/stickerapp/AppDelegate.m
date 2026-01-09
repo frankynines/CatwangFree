@@ -6,7 +6,6 @@
 //  ALL ARTWORK AND DESIGN OWNED BY 99centbrains, not for reproduction or redistribution
 //
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "PlayViewController.h"
 #import <AdSupport/AdSupport.h>
 

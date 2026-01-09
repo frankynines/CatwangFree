@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="wfh-dr-ZED">
             <objects>
-                <viewController storyboardIdentifier="seg_ViewController" automaticallyAdjustsScrollViewInsets="NO" id="aI4-sm-88H" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="seg_ViewController" automaticallyAdjustsScrollViewInsets="NO" id="aI4-sm-88H" customClass="ViewController" customModule="CatWang2026" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dxv-0a-Yfn"/>
                         <viewControllerLayoutGuide type="bottom" id="hGy-4n-LRn"/>
@@ -435,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jy-Yu-zKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="156"/>
+            <point key="canvasLocation" x="1033" y="144"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="C2h-z2-Ve0">
@@ -974,7 +974,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1V-Ix-IvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000.25" y="228"/>
+            <point key="canvasLocation" x="1950" y="156"/>
         </scene>
         <!--Paint Tool Set View Controller-->
         <scene sceneID="LFD-JR-mPw">
