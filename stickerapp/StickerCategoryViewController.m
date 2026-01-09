@@ -111,8 +111,6 @@
     if (error) {
         NSLog(@"Error in getStickerPack: %@",[error localizedDescription]);
         
-        //[//Flurry logError:@"Error: getStickerPack" message:[error localizedDescription] error:error];
-        // filelist = nil;
     }
     
     return [filelist mutableCopy];

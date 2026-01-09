@@ -156,8 +156,6 @@
 		74D596D11AA4FED3008B892B /* ui_cropview_checkers.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D596CF1AA4FED3008B892B /* ui_cropview_checkers.png */; };
 		74D596D21AA4FED3008B892B /* ui_cropview_checkers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D596D01AA4FED3008B892B /* ui_cropview_checkers@2x.png */; };
 		74D596D81AA52699008B892B /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D596D71AA52699008B892B /* UIImage+ImageEffects.m */; };
-		8075EE2E1BA7650400D284AA /* libFlurryAds_5.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8075EE2C1BA7650400D284AA /* libFlurryAds_5.0.0.a */; };
-		8075EE2F1BA7650400D284AA /* libFlurry_5.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8075EE2D1BA7650400D284AA /* libFlurry_5.0.0.a */; };
 		80F175F31B2E2502007623E0 /* SelectStickerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F175E61B2E2502007623E0 /* SelectStickerStoryboard.storyboard */; };
 		80F175F41B2E2502007623E0 /* StickerCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F175E81B2E2502007623E0 /* StickerCategoryViewController.m */; };
 		80F175F51B2E2502007623E0 /* StickerCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F175EA1B2E2502007623E0 /* StickerCategoryCollectionViewCell.m */; };
@@ -379,11 +377,6 @@
 		74D596D01AA4FED3008B892B /* ui_cropview_checkers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui_cropview_checkers@2x.png"; sourceTree = "<group>"; };
 		74D596D61AA52699008B892B /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		74D596D71AA52699008B892B /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		8075EE281BA7650400D284AA /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		8075EE2A1BA7650400D284AA /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
-		8075EE2B1BA7650400D284AA /* FlurryAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAds.h; sourceTree = "<group>"; };
-		8075EE2C1BA7650400D284AA /* libFlurryAds_5.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAds_5.0.0.a; sourceTree = "<group>"; };
-		8075EE2D1BA7650400D284AA /* libFlurry_5.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.0.0.a; sourceTree = "<group>"; };
 		80F175E61B2E2502007623E0 /* SelectStickerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectStickerStoryboard.storyboard; sourceTree = "<group>"; };
 		80F175E71B2E2502007623E0 /* StickerCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickerCategoryViewController.h; sourceTree = "<group>"; };
 		80F175E81B2E2502007623E0 /* StickerCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickerCategoryViewController.m; sourceTree = "<group>"; };
@@ -418,12 +411,10 @@
 				3768A69D16A092010029D7BE /* AssetsLibrary.framework in Frameworks */,
 				379FDAA615E6A6B1007E7141 /* CFNetwork.framework in Frameworks */,
 				3768A69B16A091D40029D7BE /* Social.framework in Frameworks */,
-				8075EE2E1BA7650400D284AA /* libFlurryAds_5.0.0.a in Frameworks */,
 				3768A69916A091CF0029D7BE /* Accounts.framework in Frameworks */,
 				3768A69716A091C90029D7BE /* libsqlite3.dylib in Frameworks */,
 				37D6CA521603EFFE00B7D674 /* libz.dylib in Frameworks */,
 				3768A69516A091B20029D7BE /* MapKit.framework in Frameworks */,
-				8075EE2F1BA7650400D284AA /* libFlurry_5.0.0.a in Frameworks */,
 				3768A69316A091A70029D7BE /* CoreTelephony.framework in Frameworks */,
 				379FDAB215E6A75E007E7141 /* CoreMotion.framework in Frameworks */,
 				379FDAB015E6A740007E7141 /* AddressBookUI.framework in Frameworks */,
@@ -480,7 +471,6 @@
 		3735A29315C5EB3B00AA5A56 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				8075EE271BA7650400D284AA /* Flurry */,
 				74D596D61AA52699008B892B /* UIImage+ImageEffects.h */,
 				74D596D71AA52699008B892B /* UIImage+ImageEffects.m */,
 				74BFF41D1AA3CBE000AE244D /* SVWebViewController */,
@@ -779,27 +769,6 @@
 				74BFF4371AA3CBE000AE244D /* SVWebViewControllerActivitySafari@2x.png */,
 			);
 			path = Safari;
-			sourceTree = "<group>";
-		};
-		8075EE271BA7650400D284AA /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				8075EE281BA7650400D284AA /* Flurry.h */,
-				8075EE291BA7650400D284AA /* FlurryAds */,
-				8075EE2D1BA7650400D284AA /* libFlurry_5.0.0.a */,
-			);
-			name = Flurry;
-			path = stickerapp/external/Flurry;
-			sourceTree = SOURCE_ROOT;
-		};
-		8075EE291BA7650400D284AA /* FlurryAds */ = {
-			isa = PBXGroup;
-			children = (
-				8075EE2A1BA7650400D284AA /* FlurryAdDelegate.h */,
-				8075EE2B1BA7650400D284AA /* FlurryAds.h */,
-				8075EE2C1BA7650400D284AA /* libFlurryAds_5.0.0.a */,
-			);
-			path = FlurryAds;
 			sourceTree = "<group>";
 		};
 		80F175D61B2E24D8007623E0 /* StickerSelectViewCell */ = {

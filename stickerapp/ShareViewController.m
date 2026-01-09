@@ -8,7 +8,6 @@
 
 #import "ShareViewController.h"
 #import <MobileCoreServices/UTCoreTypes.h>
-#import "Flurry.h"
 #import "SVProgressHUD.h"
 #import "ALAssetsLibrary+CustomPhotoAlbum.h"
 #import "UIImage+ImageEffects.h"
@@ -83,14 +82,12 @@
     [library saveImage:userExportedImage toAlbum:kAlbumName withCompletionBlock:^(NSError *error) {
         if (error!=nil) {
             NSLog(@"Big error: %@", [error description]);
-            [Flurry logError:@"Error: sharePhotoLibrary" message:[error localizedDescription] error:error];
         }
     }];
     
     // UIImageWriteToSavedPhotosAlbum(userExportedImage,nil,@selector(sharePhotoLibraryComplete:),nil);
 	//[self sharePhotoLibraryComplete];
     [SVProgressHUD showSuccessWithStatus:@"Saved!"];
-    [Flurry logEvent:@"Share - Saved Image"];
     
 }
 
@@ -103,9 +100,7 @@
 
 
 - (IBAction)shareEmail:(id)sender {
-    
-    [Flurry logEvent:@"Share - Emailed"];
-    
+        
     if (![MFMailComposeViewController canSendMail]){
         return;
     }
@@ -163,7 +158,6 @@
 
 - (IBAction)shareTwitter:(id)sender {
     
-    [Flurry logEvent:@"Share - Twitter"];
     
     if ([[[UIDevice currentDevice] systemVersion] compare:@"6.0" options:NSNumericSearch] != NSOrderedAscending) {
         SLComposeViewController *twController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
@@ -203,9 +197,7 @@
 }
 
 - (IBAction)shareFacebook:(id)sender{
-    
-    [Flurry logEvent:@"Share - Facebook"];
-    
+        
     if ([[[UIDevice currentDevice] systemVersion] compare:@"6.0" options:NSNumericSearch] != NSOrderedAscending){
         
         SLComposeViewController *fbController = [SLComposeViewController
@@ -254,9 +246,7 @@
 
 
 - (IBAction)shareInstagram:(id)sender{
-    
-    [Flurry logEvent:@"Share - Instagram"];
-    
+        
     NSURL *instagramURL = [NSURL URLWithString:@"instagram://app"];
     if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
         
@@ -308,7 +298,6 @@
     
 }
 - (IBAction)shareMMS{
-    [Flurry logEvent:@"Share - MMS"];
     
     if(![MFMessageComposeViewController canSendText]) {
         

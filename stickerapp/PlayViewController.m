@@ -15,7 +15,6 @@
 #import "AppDelegate.h"
 #import "PaintView.h"
 #import "SVProgressHUD.h"
-#import "Flurry.h"
 #import "UIImage+Trim.h"
 #import "PaintToolSetViewController.h"
 

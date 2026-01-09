@@ -8,7 +8,6 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "PlayViewController.h"
-#import "Flurry.h"
 #import <AdSupport/AdSupport.h>
 
 
@@ -30,11 +29,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-       
-    //!NEED KEYS
-    [Flurry startSession:kFlurryKey];
-    
-       
+   
     //UA
     if (application.applicationState != UIApplicationStateActive){
         NSDictionary* userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];

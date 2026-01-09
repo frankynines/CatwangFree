@@ -13,7 +13,6 @@
 
 
 //SDK Keys
-#define kFlurryKey @"VQ7WM6AV4NJANRJ6W9E6"
 #define kApplicationProductName @"Catwang"
 #define kAppiTunesID 967807794
 

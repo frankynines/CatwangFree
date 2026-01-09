@@ -9,7 +9,6 @@
 #import "CWInAppHelper.h"
 #import <StoreKit/StoreKit.h>
 #import "SVProgressHUD.h"
-//#import "Flurry.h"
 @implementation CWInAppHelper
 
 @synthesize products;
@@ -258,8 +257,7 @@ static CWInAppHelper * _sharedHelper;
 }
 
 - (void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error{
-    
-    //[Flurry logError:@"Error: Payment Que:" message:[error localizedDescription] error:error];
+
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     

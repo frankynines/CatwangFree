@@ -8,7 +8,6 @@
 #import "ViewController.h"
 #import "PlayViewController.h"
 #import "AppDelegate.h"
-#import "Flurry.h"
 #import "CWInAppHelper.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
