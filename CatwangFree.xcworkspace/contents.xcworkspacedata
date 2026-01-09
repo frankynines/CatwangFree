@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Podfile">
-   </FileRef>
-   <FileRef
       location = "group:CatwangFree.xcodeproj">
    </FileRef>
    <FileRef
@@ -36,8 +33,5 @@
    </FileRef>
    <FileRef
       location = "group:Icon@2x.png">
-   </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -120,7 +120,6 @@
 		379FDAA215E6A6A1007E7141 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FDAA115E6A6A1007E7141 /* EventKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		379FDAA415E6A6A9007E7141 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FDAA315E6A6A9007E7141 /* Security.framework */; };
 		379FDAA615E6A6B1007E7141 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FDAA515E6A6B1007E7141 /* CFNetwork.framework */; };
-		379FDAA815E6A6CA007E7141 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FDAA715E6A6CA007E7141 /* StoreKit.framework */; };
 		379FDAAC15E6A706007E7141 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FDAAB15E6A706007E7141 /* SystemConfiguration.framework */; };
 		379FDAAE15E6A736007E7141 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FDAAD15E6A736007E7141 /* AddressBook.framework */; };
 		379FDAB015E6A740007E7141 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FDAAF15E6A740007E7141 /* AddressBookUI.framework */; };
@@ -174,7 +173,6 @@
 		80F176071B2E5F12007623E0 /* catwang_banner_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F176011B2E5F12007623E0 /* catwang_banner_05.png */; };
 		80F176081B2E5F12007623E0 /* catwang_banner_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F176021B2E5F12007623E0 /* catwang_banner_06.png */; };
 		80F1760A1B2F50B5007623E0 /* ui_icon_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F176091B2F50B5007623E0 /* ui_icon_lock.png */; };
-		C7A8BF6CB3296C4A62E79E0B /* Pods_CatwangFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40273F0403A6DE45767D03E3 /* Pods_CatwangFree.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,7 +253,6 @@
 		2CB701CA184D6DDE00E33971 /* ui_paintmode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_paintmode.png; sourceTree = "<group>"; };
 		2CB701CE184E91F500E33971 /* sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sparkle.png; sourceTree = "<group>"; };
 		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.frameworks; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		35F3DC041C3832882EFC1EEE /* Pods-CatwangFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatwangFree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatwangFree/Pods-CatwangFree.debug.xcconfig"; sourceTree = "<group>"; };
 		3735A2DC15C776D000AA5A56 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		3735A2E815C77DDA00AA5A56 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		3735A2E915C77DDA00AA5A56 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
@@ -317,7 +314,6 @@
 		379FDAA115E6A6A1007E7141 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		379FDAA315E6A6A9007E7141 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		379FDAA515E6A6B1007E7141 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		379FDAA715E6A6CA007E7141 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		379FDAA915E6A6D8007E7141 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		379FDAAB15E6A706007E7141 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		379FDAAD15E6A736007E7141 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -328,7 +324,6 @@
 		37E82F6716ED584F00CC32C6 /* stickers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stickers; sourceTree = SOURCE_ROOT; };
 		37E82F6B16ED6D8700CC32C6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		40273F0403A6DE45767D03E3 /* Pods_CatwangFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatwangFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A5854E60785ADE1F2505A4E /* Pods-CatwangFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatwangFree.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatwangFree/Pods-CatwangFree.release.xcconfig"; sourceTree = "<group>"; };
 		74098B641AA56F8C009D63B5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
 		74098B661AA56F8C009D63B5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		74098B6A1AA573A6009D63B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -430,7 +425,6 @@
 				3768A69516A091B20029D7BE /* MapKit.framework in Frameworks */,
 				8075EE2F1BA7650400D284AA /* libFlurry_5.0.0.a in Frameworks */,
 				3768A69316A091A70029D7BE /* CoreTelephony.framework in Frameworks */,
-				379FDAA815E6A6CA007E7141 /* StoreKit.framework in Frameworks */,
 				379FDAB215E6A75E007E7141 /* CoreMotion.framework in Frameworks */,
 				379FDAB015E6A740007E7141 /* AddressBookUI.framework in Frameworks */,
 				379FDA9A15E6A671007E7141 /* AudioToolbox.framework in Frameworks */,
@@ -448,7 +442,6 @@
 				3753C79E15C329E400B8AEDE /* CoreImage.framework in Frameworks */,
 				3753C73E15C3132900B8AEDE /* UIKit.framework in Frameworks */,
 				3753C74015C3132900B8AEDE /* Foundation.framework in Frameworks */,
-				C7A8BF6CB3296C4A62E79E0B /* Pods_CatwangFree.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,15 +475,6 @@
 				0F3711F119E3853D006252EC /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		248F089B8180D65D2374848B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				35F3DC041C3832882EFC1EEE /* Pods-CatwangFree.debug.xcconfig */,
-				5A5854E60785ADE1F2505A4E /* Pods-CatwangFree.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		3735A29315C5EB3B00AA5A56 /* External */ = {
@@ -610,7 +594,6 @@
 				3753C76415C3132900B8AEDE /* stickerAppTests */,
 				3753C73C15C3132900B8AEDE /* Frameworks */,
 				3753C73A15C3132900B8AEDE /* Products */,
-				248F089B8180D65D2374848B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -639,7 +622,6 @@
 				379FDAAD15E6A736007E7141 /* AddressBook.framework */,
 				379FDAAB15E6A706007E7141 /* SystemConfiguration.framework */,
 				379FDAA915E6A6D8007E7141 /* MobileCoreServices.framework */,
-				379FDAA715E6A6CA007E7141 /* StoreKit.framework */,
 				379FDAA515E6A6B1007E7141 /* CFNetwork.framework */,
 				379FDAA315E6A6A9007E7141 /* Security.framework */,
 				379FDAA115E6A6A1007E7141 /* EventKit.framework */,
@@ -861,12 +843,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3753C76F15C3132900B8AEDE /* Build configuration list for PBXNativeTarget "CatwangFree" */;
 			buildPhases = (
-				0700FB37E8427079E0D876DD /* Check Pods Manifest.lock */,
 				3753C73515C3132900B8AEDE /* Sources */,
 				3753C73615C3132900B8AEDE /* Frameworks */,
 				3753C73715C3132900B8AEDE /* Resources */,
-				D3694E2B1AA770927DE8DD96 /* Embed Pods Frameworks */,
-				E485A3E6506833168364D795 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -906,7 +885,7 @@
 				LastUpgradeCheck = 0430;
 				TargetAttributes = {
 					3753C73815C3132900B8AEDE = {
-						DevelopmentTeam = YM28V3B39M;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -915,6 +894,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				da,
 				de,
@@ -1062,21 +1042,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0700FB37E8427079E0D876DD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		3753C75B15C3132900B8AEDE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1089,36 +1054,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		D3694E2B1AA770927DE8DD96 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatwangFree/Pods-CatwangFree-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E485A3E6506833168364D795 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatwangFree/Pods-CatwangFree-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1287,7 +1222,6 @@
 		};
 		3753C77015C3132900B8AEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35F3DC041C3832882EFC1EEE /* Pods-CatwangFree.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1295,25 +1229,28 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "stickerApp/CatwangFree-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "stickerApp/CatwangFree-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/stickerapp/external/Flurry/FlurryAds",
 					"$(PROJECT_DIR)/stickerapp/external/Flurry",
 				);
 				OTHER_LDFLAGS = (
-					"$(inherited)",
 					"-lsqlite3.0",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = guru.theappguy.catwangfree;
 				PRODUCT_NAME = CatwangFree;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv6 armv7 arm64";
 				WRAPPER_EXTENSION = app;
@@ -1322,7 +1259,6 @@
 		};
 		3753C77115C3132900B8AEDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A5854E60785ADE1F2505A4E /* Pods-CatwangFree.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1330,25 +1266,28 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "stickerApp/CatwangFree-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "stickerApp/CatwangFree-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/stickerapp/external/Flurry/FlurryAds",
 					"$(PROJECT_DIR)/stickerapp/external/Flurry",
 				);
 				OTHER_LDFLAGS = (
-					"$(inherited)",
 					"-lsqlite3.0",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = guru.theappguy.catwangfree;
 				PRODUCT_NAME = CatwangFree;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv6 armv7 arm64";
 				WRAPPER_EXTENSION = app;
