@@ -19,7 +19,7 @@
 #import "StickerPackCollectionViewCell.h"
 #import "StickerTitleCollectionReusableView.h"
 
-@interface SelectStickerQuickViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, ADBannerViewDelegate, StickerTitleCollectionReusableViewDelegate, StickerPackCollectionViewCellDelegate>{
+@interface SelectStickerQuickViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, StickerTitleCollectionReusableViewDelegate, StickerPackCollectionViewCellDelegate>{
     
     BOOL iAdBannerVisible;
 
@@ -27,7 +27,7 @@
 
 @property (nonatomic, strong)  NSMutableArray *prop_stickerPacks;
 @property (nonatomic, weak)  IBOutlet UIPageControl *ibo_pageControl;
-@property (nonatomic, strong) ADBannerView *iAdBanner;
+//@property (nonatomic, strong) ADBannerView *iAdBanner;
 @property (nonatomic, weak) IBOutlet UICollectionView *ibo_collectionView;
 
 @end
@@ -158,13 +158,13 @@
     [super viewDidDisappear:animated];
 
     //iAd
-    if (_iAdBanner){
-        [_iAdBanner removeFromSuperview];
-        _iAdBanner.delegate = nil;
-        _iAdBanner = nil;
-        
-        iAdBannerVisible = NO;
-    }
+//    if (_iAdBanner){
+//        [_iAdBanner removeFromSuperview];
+//        _iAdBanner.delegate = nil;
+//        _iAdBanner = nil;
+//        
+//        iAdBannerVisible = NO;
+//    }
     
     
 
@@ -287,34 +287,34 @@
 }
 
 #pragma BANNER
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+//- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+//
+//    if (!iAdBannerVisible){
+//        NSLog(@"SHOW BANNER");
+////        [UIView animateWithDuration:.5 animations:^{
+////            _iAdBanner.frame = CGRectOffset(_iAdBanner.frame, 0, - _iAdBanner.frame.size.height);
+////            iAdBannerVisible = YES;
+////            
+////        }];
+//        
+//    }
+//    
+//}
 
-    if (!iAdBannerVisible){
-        NSLog(@"SHOW BANNER");
-        [UIView animateWithDuration:.5 animations:^{
-            _iAdBanner.frame = CGRectOffset(_iAdBanner.frame, 0, - _iAdBanner.frame.size.height);
-            iAdBannerVisible = YES;
-            
-        }];
-        
-    }
-    
-}
-
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error{
-    
-    
-    if (iAdBannerVisible){
-        NSLog(@"HIDE BANNER");
-
-        [UIView animateWithDuration:.5 animations:^{
-            _iAdBanner.frame = CGRectOffset(_iAdBanner.frame, 0, _iAdBanner.frame.size.height);
-            iAdBannerVisible = NO;
-
-        }];
-        
-    }
-}
+//- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error{
+//    
+//    
+//    if (iAdBannerVisible){
+//        NSLog(@"HIDE BANNER");
+//
+////        [UIView animateWithDuration:.5 animations:^{
+////            _iAdBanner.frame = CGRectOffset(_iAdBanner.frame, 0, _iAdBanner.frame.size.height);
+////            iAdBannerVisible = NO;
+////
+////        }];
+//        
+//    }
+//}
 
 
 

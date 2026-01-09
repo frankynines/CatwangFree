@@ -11,7 +11,7 @@
 #import <Twitter/Twitter.h>
 
 @class ShareViewController;
-
+ 
 @protocol ShareViewControllerDelegate <NSObject>
 
 - (void)shareViewDidComplete:(ShareViewController *)controller withMessage:(NSString*)message;
